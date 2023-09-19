@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Home | Marmoraria Maximo |</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="/">Marmoraria Máximo</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/">SOBRE</a></li>
+                <li><a href="/">SERVIÇOS</a></li>
+                <li><a href="/">MATERIAIS</a></li>
+                <li><a href="/">CONTATOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <!-- Radio Buttons -->
+                <input type="radio" name="radio-bnt" id="radio1" onclick="btnF()">
+                <input type="radio" name="radio-bnt" id="radio2" onclick="btnF()">
+                <input type="radio" name="radio-bnt" id="radio3" onclick="btnF()">
+                <input type="radio" name="radio-bnt" id="radio4" onclick="btnF()">
+                <!-- Fim Radio Buttons -->
+
+                <!-- Slide images -->
+                <div class="slide first">
+                    <img src="imagens/slide/slide-01.jpeg" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="imagens/slide/slide-02.jpeg" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="imagens/slide/slide-03.jpeg" alt="Imagem 3">
+                </div>
+                <div class="slide">
+                    <img src="imagens/slide/slide-04.jpeg" alt="Imagem 4">
+                </div>
+                <!-- Fim Slide images -->
+
+                <!-- Navigation auto -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Developed by <a href="https://github.com/g-matheusdouglas" rel="author" target="_blank">Matheus Douglas</a> &copy;
+        </p>
+    </footer>
+    <script src="scripts/mobile-navbar.js"></script>
+    <script src="scripts/slide.js"></script>
+</body>
+</html>

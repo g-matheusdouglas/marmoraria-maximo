@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+header {
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.507);
+    background-image: url('../imagens/02.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.223);
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div#mx-logo {
+    display: flex;
+    max-width: 200px;
+}
+
+div#mx-logo > img {
+    width: 80px;
+    margin: -10px 0px;
+}
+
+div#mx-logo > h1 {
+    font-weight: bolder;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+header h1 > span {
+    display: none;
+}
+
+nav.menu > ul {
+    display: flex;
+}
+
+nav.menu > ul > li {
+    font-weight: bolder;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav.menu > ul > li > a {
+    color: white;
+    font-weight: bold;
+}
+
+div.bemvido {
+    margin-top: 100px;
+}
+
+header > div > h2 {
+    font-size: 1rem;
+}
+
+
+aside.balao {
+    background-color: rgba(0, 0, 0, 0.168);
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+aside.balao > a {
+    color: white;
+    text-decoration: none;
+}
+
+aside.balao > a:hover {
+    text-decoration: underline;
+}
+
+strong.textGrande {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header > div > p {
+    margin: 0;
+    max-width: 300px;
+}
+
+/* Configuração do main */
+
+main {
+    width: 100%;
+}
+
+/* Configuração do Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: end;
+}
+
+footer > p {
+    margin: 5px;
+}
+
+footer a {
+    color: wheat;
+}
