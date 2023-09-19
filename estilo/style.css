@@ -10,12 +10,6 @@
     --cor02: #20a6ff;
 }
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
 a {
     text-decoration: none;
     transition: 0.3s;
@@ -67,9 +61,9 @@ nav a {
     transition: 0.3s;
 }
 
-/* main {
+main {
     height: 90vh;
-} */
+}
 
 /* Slide config */
 
@@ -183,7 +177,7 @@ nav a {
 footer {
     background: var(--cor01);
     text-align: center;
-    /* height: 2vh; */
+    height: 2vh;
 }
 
 footer, footer a {
@@ -205,7 +199,6 @@ footer, footer a {
 }
 
 @media screen and (max-width: 620px) {
-
     #wrapper {
         overflow-x: hidden;
         position: relative;
@@ -221,7 +214,6 @@ footer, footer a {
 
     .nav-list {
         position: absolute;
-        min-width: 0px;
         z-index: 1;
         top: 8vh;
         right: 0;
