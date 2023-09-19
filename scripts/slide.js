@@ -18,7 +18,7 @@ function btnF() {
 
 setInterval( function(){
     nextImage();
-}, 5000)
+}, 4000)
 
 
 function nextImage() {
