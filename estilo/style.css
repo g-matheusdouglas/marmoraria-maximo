@@ -8,6 +8,7 @@
 :root {
     --cor01: #23232e;
     --cor02: #20a6ff;
+    --cor03: #e0e0e0;
 }
 
 a {
@@ -61,8 +62,18 @@ nav a {
     transition: 0.3s;
 }
 
+/* Main config inicio */
+
 main {
-    height: 90vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor03);
+}
+
+div.container {
+    /* height: 90vh; */
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322), -2px -2px 5px rgba(0, 0, 0, 0.322);
 }
 
 /* Slide config */
@@ -174,10 +185,69 @@ main {
 
 /* Fim slide config */
 
-footer {
-    background: var(--cor01);
+section.containers {
+    background-color: white;
+    height: 50vw;
+    min-height: 400px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.containers:nth-child(even) {
+    background-color: var(--cor01);
+    color: white;
+}
+
+#redes {
+    max-height: 250px;
+    min-height: 220px;
     text-align: center;
-    height: 2vh;
+}
+
+#redes h1 {
+    font-size: 2.4rem;
+}
+
+#redes h1 > small {
+    font-size: 1.8rem;
+}
+
+#redes p {
+    margin-bottom: 10px;
+}
+
+ul.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.redes-sociais li {
+    list-style: none;
+    width: 75px;
+    height: 75px;
+    background-color: var(--cor03);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    transition: 1.3s;
+}
+
+ul.redes-sociais li:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+ul.redes-sociais li > img {
+    width: 75px;
+}
+
+/* Main config Fim */
+
+footer {
+    background: black;
+    text-align: center;
+    /* height: 2vh; */
 }
 
 footer, footer a {
